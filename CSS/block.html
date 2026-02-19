@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Refined</title>
+    <style>
+        
+
+        body {
+            background-color: white;
+            display: flex;
+            text-align: center;
+            gap: 50px;
+            padding: 50px;
+        }
+
+        
+        div {
+            padding: 15px; 
+            margin: 5px;
+            text-align: center;
+        }
+
+        .cb {
+            border: 2px solid #4d8aff; 
+            color: #4d8aff;
+        }
+
+        .b {
+            display: block; 
+            background-color: rgba(77, 138, 255, 0.1);
+        }
+
+        .ci {
+            border: 2px solid #00ff0d; 
+            color: #00ff15;
+        }
+
+        .i {
+            display: inline-block; 
+            background-color: rgba(30, 255, 0, 0.1);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="cb">
+        <h1>Block</h1>
+        <div class="b">Box 1</div>
+        <div class="b">Box 2</div>
+        <div class="b">Box 3</div>
+        <div class="b">Box 4</div>
+    </div>
+
+    <div class="ci">
+        <h1>Inline-Block</h1>
+        <div class="i">Box 1</div>
+        <div class="i">Box 2</div>
+        <div class="i">Box 3</div>
+        <div class="i">Box 4</div>
+    </div>
+
+</body>
+</html>

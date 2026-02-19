@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Usage</title>
+    <style>
+        .box{
+            border: 3px solid lightblue;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr; /* 1 part left, 3 parts right */
+            gap: 20px;                      /* space between columns */
+        }
+
+        /* Style links in the left column */
+        .left a {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+     <div class="box">
+        <h1 style="text-align: center;"> My Header </h1>
+     </div>
+    <div class="box grid-container">   
+        <div class="left">
+            <a href="#">LINK 1</a>
+            <a href="#">LINK 2</a>
+            <a href="#" style="color: aquamarine;">Link 3</a>
+        </div>
+        <div class="right">
+            <h2>Lorem Ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim
+                litora eget montes rhoncus sapien neque urna.
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <h2 style="text-align: center;">Footer</h2>
+    </div>
+
+</body>
+</html>
