@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Student Registration Form</title>
+        <style>
+        body{
+            font-family: Arial;
+            background-color:black;
+        }
+
+        h1{
+            color:white;
+        }
+
+        form{
+            width:60%;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        input, select{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+        }
+
+        input[type="radio"]{
+            width:auto;
+        }
+        
+        footer{
+              color:white;
+        }
+        </style>
+
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+
+    <hr>
+
+    <form action="#" method="post" align="left">
+        <br>
+ <b>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><hr>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter valid email address" required>
+        <br><hr>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter correct password" required>
+        <br><hr>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        <br><hr>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="">-- Select Course --</option>
+            <option value="cs">Computer Science</option>
+            <option value="ds">Data Science</option>
+        </select>
+        <br><hr>
+
+        <label for="age"> Age :</label>
+        <input type="tel" id="age" name="age" placeholder="Enter your age"  required>
+        <br><hr>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+     </b>
+    </form>
+
+        <hr>
+
+    <footer>
+        <b>
+        <p align="center">&copy; 2026 Student Registration Portal </p>
+        <p> By SHAURYA PRATAP SINGH </p>
+        </b>
+    </footer>
+
+</body>
+</html>
